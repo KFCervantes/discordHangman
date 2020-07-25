@@ -34,14 +34,11 @@ async def on_disconnect():
 async def on_ready():
     print(f'{client.user.name} is logged in')
 
-#will have to add some stuff to allow images in this
-
 @client.event
 async def on_message(message: discord.Message):
     if message.author == client.user:
         return
 
-    #this if statement is too long
     #starts by making sure there is no command prefix
     #then checks to see if the person that sent the message has played
     #then checks if that person is currently playing
