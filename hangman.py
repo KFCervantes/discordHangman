@@ -3,8 +3,8 @@ from discord.ext import commands
 import nest_asyncio
 import game
 
-#generate token later
-token = 'NzM1NzYyNTM0OTQxOTgyNzQw.Xxk-WQ.3lNHxnP6F2ki4DfhRQ-m4KDs0qU'
+#add correct token for bot later
+token = None
 
 nest_asyncio.apply()
 
@@ -13,7 +13,10 @@ client = commands.Bot(command_prefix = prefix)
 
 #adding variables to client to avoid having to use globals
 client.command_prefix = prefix
-client.game_channel_id = 733679936878936170
+
+#get id from correct game channel later
+client.game_channel_id = None
+
 client.game_dict = {}
 
 #for debugging, doesn't affect bot
