@@ -3,6 +3,7 @@ from random import choice as pick_random
 
 word_list = []
 
+#only the dictionary keys are needed
 with open('words_dictionary.json') as file:
     word_list = [*load_file(file)]
     
